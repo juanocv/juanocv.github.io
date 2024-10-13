@@ -19,6 +19,9 @@ const translations = {
         additionalUrls: "Links Adicionais " + links,
         alreadyGraduated: "Formado",
         notGraduated: "Quase lá",
+        university: "Universidade Federal do ABC",
+        course1: "Bacharelado em Ciência e Tecnologia",
+        course2: "Bacharelado em Ciência da Computação",
 
         knowledgeList: [
             "Programação Orientada a Objetos",
@@ -39,6 +42,9 @@ const translations = {
         additionalUrls: "Additional URLs " + links,
         alreadyGraduated: "Graduated",
         notGraduated: "Almost there",
+        university: "Federal University of ABC",
+        course1: "Bachelor in Science and Technology",
+        course2: "Bachelor in Computer Science",
 
         knowledgeList: [
             "Object-Oriented Programming",
@@ -59,6 +65,9 @@ const translations = {
         additionalUrls: "Enlaces Adicionales " + links,
         alreadyGraduated: "Graduado",
         notGraduated: "En curso",
+        university: "Universidad Federal del ABC",
+        course1: "Licenciatura en Ciencia y Tecnología",
+        course2: "Licenciatura en Ciencia de la Computación",
 
         knowledgeList: [
             "Programación Orientada a Objetos",
@@ -84,6 +93,9 @@ function changeLanguage(language) {
     document.getElementById("additional-urls").textContent = content.additionalUrls;
     document.getElementById("already-graduated").textContent = content.alreadyGraduated;
     document.getElementById("not-graduated").textContent = content.notGraduated;
+    document.getElementById("university-name").textContent = content.university;
+    document.getElementById("course-1").textContent = content.course1;
+    document.getElementById("course-2").textContent = content.course2;
 
     // Atualiza a lista de conhecimentos
     const knowledgeList = document.querySelector(".knowledge");
