@@ -1,4 +1,7 @@
-@font-face { font-family: undertale; src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');}
+@font-face {
+    font-family: undertale;
+    src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
+}
 
 /* Estilos globais */
 * {
@@ -10,17 +13,13 @@
 body {
     font-family: undertale;
     background-image: url('imgs/background.jpg');
-    background-color: #121212; /* Dark mode */
-    color: #f0f0f0; /* Cor de texto clara */
+    background-color: #121212;
+    /* Dark mode */
+    color: #f0f0f0;
+    /* Cor de texto clara */
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     padding: 20px;
-}
-
-audio {
-    display: none;
 }
 
 li {
@@ -31,12 +30,14 @@ li {
 
 /* Container principal */
 .container {
-    background-color: #1e1e1e; /* Cor mais clara para o "papel" */
+    background-color: #1e1e1e;
+    /* Cor mais clara para o "papel" */
     padding: 30px;
     border-radius: 10px;
     max-width: 800px;
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
 }
 
 .language {
@@ -68,12 +69,24 @@ li {
 }
 
 .section ul {
-    list-style-type: none;
+    
+    padding-left: 0;
 }
 
 .section ul li {
+    list-style-position: inside;
     font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+.section.certificates ul li {
+    display: list-item;
+    margin-bottom: -2%;
+}
+
+.section.interests #list {
+    display: flex;
+    align-items: center;
 }
 
 /* Estilo para os links */
@@ -86,7 +99,11 @@ li {
     text-decoration: underline;
 }
 
-/* Responsividade */
+.footer p {
+    text-align: center;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
