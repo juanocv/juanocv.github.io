@@ -8,6 +8,8 @@ var certs = "🏅";
 var links = "💻";
 var inters = "💡";
 var check = "✅";
+var bct = "💻";
+var bcc = "🔬";
 
 const translations = {
     pt: {
@@ -22,8 +24,8 @@ const translations = {
         alreadyGraduated: "Formado",
         notGraduated: "Quase lá",
         university: "Universidade Federal do ABC",
-        course1: "Bacharelado em Ciência e Tecnologia - [2018-2023]",
-        course2: "Bacharelado em Ciência da Computação - [2023-2025]",
+        course1: bct + " Bacharelado em Ciência e Tecnologia - [2018-2023]",
+        course2: bcc + " Bacharelado em Ciência da Computação - [2023-2025]",
 
         knowledgeList: [
             "Programação Orientada a Objetos",
@@ -52,8 +54,8 @@ const translations = {
         alreadyGraduated: "Graduated",
         notGraduated: "Almost there",
         university: "Federal University of ABC",
-        course1: "Bachelor in Science and Technology - [2018-2023]",
-        course2: "Bachelor in Computer Science - [2023-2025]",
+        course1: bct + " Bachelor in Science and Technology - [2018-2023]",
+        course2: bcc + " Bachelor in Computer Science - [2023-2025]",
 
         knowledgeList: [
             "Object-Oriented Programming",
@@ -82,8 +84,8 @@ const translations = {
         alreadyGraduated: "Graduado",
         notGraduated: "En curso",
         university: "Universidad Federal del ABC",
-        course1: "Licenciatura en Ciencia y Tecnología - [2018-2023]",
-        course2: "Licenciatura en Ciencia de la Computación - [2023-2025]",
+        course1: bct + " Licenciatura en Ciencia y Tecnología - [2018-2023]",
+        course2: bcc + " Licenciatura en Ciencia de la Computación - [2023-2025]",
 
         knowledgeList: [
             "Programación Orientada a Objetos",
