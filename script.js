@@ -30,10 +30,8 @@ const translations = {
         knowledgeList: [
             "Programação Orientada a Objetos",
             "Programação Funcional",
-            "Engenharia de Software",
+            "Algoritmos e Estruturas de dados",
             "Visão Computacional",
-            "Algoritmos e estruturas de dados",
-            "Desenvolvimento low e no code"
         ],
 
         interestsList: [
@@ -60,10 +58,8 @@ const translations = {
         knowledgeList: [
             "Object-Oriented Programming",
             "Functional Programming",
-            "Software Engineering",
-            "Computer Vision",
             "Algorithms and Data Structures",
-            "Low/No Code Development"
+            "Computer Vision",
         ],
 
         interestsList: [
@@ -90,10 +86,8 @@ const translations = {
         knowledgeList: [
             "Programación Orientada a Objetos",
             "Programación Funcional",
-            "Ingeniería de Software",
-            "Visión por computador",
             "Algoritmos y Estructuras de Datos",
-            "Desarrollo de Código Bajo/No Code"
+            "Visión por computador",
         ],
 
         interestsList: [
