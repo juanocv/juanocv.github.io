@@ -31,14 +31,14 @@ const translations = {
             "Programação Orientada a Objetos",
             "Programação Funcional",
             "Engenharia de Software",
-            "Aprendizado de Máquina",
+            "Visão Computacional",
             "Algoritmos e estruturas de dados",
             "Desenvolvimento low e no code"
         ],
 
         interestsList: [
             "Paradigma de programação funcional " + check,
-            "Modelos preditivos aplicados à mobilidade urbana " + check,
+            "Visão computacional aplicada à infraestrutura urbana " + check,
             "Ensino de lógica na educação " + check
         ]
     },
@@ -61,14 +61,14 @@ const translations = {
             "Object-Oriented Programming",
             "Functional Programming",
             "Software Engineering",
-            "Machine Learning",
+            "Computer Vision",
             "Algorithms and Data Structures",
             "Low/No Code Development"
         ],
 
         interestsList: [
             "Functional Programming " + check,
-            "ML models applied to urban mobility " + check,
+            "Computer vision applied to urban infrastructure " + check,
             "Logic teaching in education " + check
         ]
     },
@@ -91,14 +91,14 @@ const translations = {
             "Programación Orientada a Objetos",
             "Programación Funcional",
             "Ingeniería de Software",
-            "Aprendizaje Automático",
+            "Visión por computador",
             "Algoritmos y Estructuras de Datos",
             "Desarrollo de Código Bajo/No Code"
         ],
 
         interestsList: [
             "Paradigma de Programación Funcional " + check,
-            "Modelos predictivos aplicados a la mobilidad urbana " + check,
+            "Visión por computador aplicada a la infraestructura urbana" + check,
             "Ensino de lógica en la educación " + check
         ]
     }
