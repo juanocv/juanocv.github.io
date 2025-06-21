@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flag-icons\flag-icons.min.css">
+    <link rel="stylesheet" href="flag-icons-master\flag-icons.min.css">
 </head>
 
 <body class="light">
@@ -52,27 +52,15 @@
                     <br>
                     <i id="education_text_1">[Education text]</i>
                 </li>
-                <br>
                 <li>
                     <strong id="education_title_2"></strong> <small>(01.2025 - 03.2025)</small>
                     <br>
                     <i id="education_text_2">[Education text]</i>
                 </li>
                 <li>
-                    <h5 id="know2">Engenharia de Software</h5>
-                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow=60"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                            style="width: 60%"></div>
-                    </div>
-                </li>
-                <li>
-                    <h5 id="know3">Aprendizado de Máquina</h5>
-                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow=50"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                            style="width: 50%"></div>
-                    </div>
+                    <strong id="education_title_3"></strong> <small>(06/2018 - 12/2025)</small><br>
+                    <i id="education_text_3"></i><br>
+                    <i id="education_text_4"></i>
                 </li>
             </ul>
         </section>
@@ -81,58 +69,32 @@
             <h2 id="project_header"></h2>
             <ul id="project_list">
                 <li>
-                    <strong id="project_title_1"></strong> <small><a href="https://github.com/juanocv/sidewalk_analysis" target="_blank" rel="noopener noreferrer">github link</a></small><br>
+                    <strong id="project_title_1"></strong> <small><a href="https://github.com/juanocv/sidewalk_analysis"
+                            target="_blank" rel="noopener noreferrer">github link</a></small><br>
                     <i id="project_text_1">[Project text]</i>
                 </li>
                 <br>
                 <li>
-                    <strong id="project_title_2"></strong> <small><a href="https://github.com/juanocv/2DG" target="_blank" rel="noopener noreferrer">github link</a></small><br>
+                    <strong id="project_title_2"></strong> <small><a href="https://github.com/juanocv/2DG"
+                            target="_blank" rel="noopener noreferrer">github link</a></small><br>
                     <i id="project_text_2">[Project text]</i>
                 </li>
             </ul>
         </section>
 
-        <!-- Divisão para interesses -->
-        <section class="section interests">
-            <h2 id="interests-title">Interesses &#128161</h2>
-            <div class="container text-center bg-dark">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <h5 id="ints0">Paradigma de programação funcional &#9989</h5>
-                    </div>
-                    <div class="col">
-                        <h5 id="ints1">Modelos preditivos aplicados à mobilidade urbana &#9989</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="container text-center bg-dark">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <h5 id="ints2">Ensino de lógica na educação &#9989</h5>
-                    </div>
-                </div>
-            </div>
+        <section id="contact">
+            <h2 id="contact_title"></h2>
+            <p id="contact_text">[Contact info]</p>
         </section>
 
-        <!-- Divisão para links adicionais -->
-        <section class="section links">
-            <h2 id="additional-urls">Contato &#128187</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/juanocarvalho/">LinkedIN</a></li>
-                <li><a href="https://github.com/juanocv">GitHub</a></li>
-                <li><a href="mailto: juanocarvalho@gmail.com">E-mail</a></li>
-            </ul>
-        </section>
-    </div>
+        <footer>
+            &copy; Copyright 2025 by Juan Carvalho.
+        </footer>
 
-    <footer>
-        &copy; Copyright 2025 by Juan Carvalho.
-    </footer>
-
-    <script>
-        const translations = {
-            en: {
-                about_text: `Hi there! I'm Juan Carvalho, currently a last-year CS undergraduate and Msc. non-degree student at 
+        <script>
+            const translations = {
+                en: {
+                    about_text: `Hi there! I'm Juan Carvalho, currently a last-year CS undergraduate and Msc. non-degree student at 
                 <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Federal University of ABC</a>, 
                 under the supervision of 
                 <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael Yokoingawa de Camargo</a> 
@@ -141,24 +103,24 @@
                 <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer">University of South Bohemia</a>, 
                 where I was able to conduct research on artificial intelligence and its uses in agricultural technologies through computer vision ML models applied to agriculture.
                 <br><br>I'm highly interested in <b>Computer Vision</b> and <b>Machine Learning</b> applied into concepts/areas such as <b>Smart Cities</b> and <b>Agriculture</b>.`,
-                education_header: "Education",
-                education_title_1: "Federal University of ABC",
-                education_title_2: "University of South Bohemia",
-                education_title_3: "Federal University of ABC",
-                education_text_1: "Masters in Computer Science <small><b>(aspiring - currently non-degree student)</b></small>",
-                education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(completed)</b></small>",
-                education_text_3: "Bachelors in Computer Science <small><b>(in progress)</b></small>",
-                education_text_4: "Bachelors in Science and Technology <small><b>(completed)</b></small>",
-                project_header: "Projects",
-                project_title_1: "Sidewalk Analysis",
-                project_text_1: "Automatic sidewalk width estimation and obstacle detection using Panoptic Segmentation and Depth Estimation on Brazilian Street View imagery",
-                project_title_2: "2D Graph Generator",
-                project_text_2: "2D random graph generator created to facilitate the understanding of graph theory, especially in the application of neural networks to graphs.",
-                contact_title: "Additional Info + Contact",
-                contact_text: "For work history and related info please check out my <a href='https://www.linkedin.com/in/juanocarvalho/'> LinkedIn Profile</a>.<br>Feel free to reach me out via <a href='mailto:juanocarvalho@email.com'> email</a>.",
-            },
-            pt: {
-                about_text: `Olá! Sou Juan Carvalho, atualmente estudante do último ano de Ciência da Computação e aluno especial de mestrado na
+                    education_header: "Education",
+                    education_title_1: "Federal University of ABC",
+                    education_title_2: "University of South Bohemia",
+                    education_title_3: "Federal University of ABC",
+                    education_text_1: "Masters in Computer Science <small><b>(aspiring - currently non-degree student)</b></small>",
+                    education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(completed)</b></small>",
+                    education_text_3: "Bachelors in Computer Science <small><b>(in progress)</b></small>",
+                    education_text_4: "Bachelors in Science and Technology <small><b>(completed)</b></small>",
+                    project_header: "Projects",
+                    project_title_1: "Sidewalk Analysis",
+                    project_text_1: "Automatic sidewalk width estimation and obstacle detection using Panoptic Segmentation and Depth Estimation on Brazilian Street View imagery",
+                    project_title_2: "2D Graph Generator",
+                    project_text_2: "2D random graph generator created to facilitate the understanding of graph theory, especially in the application of neural networks to graphs.",
+                    contact_title: "Additional Info + Contact",
+                    contact_text: "For work history and related info please check out my <a href='https://www.linkedin.com/in/juanocarvalho/'> LinkedIn Profile</a>.<br>Feel free to reach me out via <a href='mailto:juanocarvalho@email.com'> email</a>.",
+                },
+                pt: {
+                    about_text: `Olá! Sou Juan Carvalho, atualmente estudante do último ano de Ciência da Computação e aluno especial de mestrado na
                 <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Universidade Federal do ABC</a>,
                 sob orientação do 
                 <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael Yokoingawa de Camargo</a> <b> (Coordenador do Centro Estratégico de Pesquisa em Ciência de Dados - DATAS)</b>.
@@ -166,93 +128,93 @@
                 <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer">Universidade da Boêmia do Sul</a>, onde conduzi pesquisas sobre
                 inteligência artificial e suas aplicações em tecnologias agrícolas através de modelos de visão computacional aplicados à agricultura,
                 <br><br>Tenho interesse em <b>Visão Computacional</b> e <b>Machine Learning</b> aplicadas a conceitos/setores como <b>Cidades Inteligentes</b> e <b>Agricultura</b>.`,
-                education_header: "Educação",
-                education_title_1: "Universidade Federal do ABC",
-                education_title_2: "Universidade da Boêmia do Sul",
-                education_title_3: "Universidade Federal do ABC",
-                education_text_1: "Mestrado em Ciência da Computação <small><b>(aspirante - atualmente aluno especial)</b></small>",
-                education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(concluído)</b></small>",
-                education_text_3: "Bacharel em Ciência da Computação <small><b>(em andamento)</b></small>",
-                education_text_4: "Bacharel em Ciência e Tecnologia <small><b>(concluído)</b></small>",
-                project_header: "Projetos",
-                project_title_1: "Análise de Calçadas",
-                project_text_1: "Estimativa automática da largura de calçadas e detecção de obstáculos usando Segmentação Panóptica e Estimativa de Profundidade em imagens do Street View brasileiro",
-                project_title_2: "Gerador de Grafos 2D",
-                project_text_2: "Gerador de grafos aleatórios 2D criado para facilitar o entendimento da teoria dos grafos, especialmente na aplicação de redes neurais a grafos.",
-                contact_title: "Contato",
-                contact_text: "Para mais informações sobre minha trajetória profissional, acesse meu <a href='https://www.linkedin.com/in/juanocarvalho/'>Perfil no LinkedIn</a>.<br>Sinta-se livre para me contatar por <a href='mailto:juanocarvalho@email.com'> email</a>."
-            },
-            es: {
-                about_text: `Hola! Soy Juan Carvalho, actualmente estudiante de último año de Ciencias de la Computación y alumno no graduado de maestría en la 
+                    education_header: "Educação",
+                    education_title_1: "Universidade Federal do ABC",
+                    education_title_2: "Universidade da Boêmia do Sul",
+                    education_title_3: "Universidade Federal do ABC",
+                    education_text_1: "Mestrado em Ciência da Computação <small><b>(aspirante - atualmente aluno especial)</b></small>",
+                    education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(concluído)</b></small>",
+                    education_text_3: "Bacharel em Ciência da Computação <small><b>(em andamento)</b></small>",
+                    education_text_4: "Bacharel em Ciência e Tecnologia <small><b>(concluído)</b></small>",
+                    project_header: "Projetos",
+                    project_title_1: "Análise de Calçadas",
+                    project_text_1: "Estimativa automática da largura de calçadas e detecção de obstáculos usando Segmentação Panóptica e Estimativa de Profundidade em imagens do Street View brasileiro",
+                    project_title_2: "Gerador de Grafos 2D",
+                    project_text_2: "Gerador de grafos aleatórios 2D criado para facilitar o entendimento da teoria dos grafos, especialmente na aplicação de redes neurais a grafos.",
+                    contact_title: "Informações Adicionais + Contato",
+                    contact_text: "Para mais informações sobre minha trajetória profissional, acesse meu <a href='https://www.linkedin.com/in/juanocarvalho/'>Perfil no LinkedIn</a>.<br>Sinta-se livre para me contatar por <a href='mailto:juanocarvalho@email.com'> email</a>."
+                },
+                es: {
+                    about_text: `Hola! Soy Juan Carvalho, actualmente estudiante de último año de Ciencias de la Computación y alumno no graduado de maestría en la 
                 <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Universidad Federal del ABC</a>,
                 bajo la supervisión del <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer"> Prof. Raphael Yokoingawa de Camargo</a> <b> (Coordinador del Centro Estratégico de Investigación en Ciencia de Datos - DATAS)</b>.
                 <br><br>En el inicio del ano, tuve la oportunidad de participar en un programa de intercambio académico en la <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer">Universidad de Bohemia del Sur</a>, donde realicé investigaciones sobre
                 inteligencia artificial y sus aplicaciones en tecnologías agrícolas mediante modelos de visión por computadora aplicados a la agricultura.
                 <br><br>Tengo enterese en <b>Visión Computacional</b> e <b>Machine Learning</b> aplicadas a conceptos/sectores como <b>Ciudades Inteligentes</b> y <b>Agricultura</b>.`,
-                education_header: "Educación",
-                education_title_1: "Universidad Federal del ABC",
-                education_title_2: "Universidad de Bohemia del Sul",
-                education_title_3: "Universidad Federal del ABC",
-                education_text_1: "Máster en Ciencias de la Computación <small><b>(aspirante - actualmente estudiante no graduado)</b></small>",
-                education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(completado)</b></small>",
-                education_text_3: "Licenciatura en Ciencias de la Computación <small><b>(en curso)</b></small>",
-                education_text_4: "Licenciatura en Ciencia y Tecnologia <small><b>(completado)</b></small>",
-                project_header: "Proyectos",
-                project_title_1: "Análisis de Aceras",
-                project_text_1: "Estimación automática del ancho de aceras y detección de obstáculos utilizando Segmentación Panóptica y Estimación de Profundidad en imágenes de Street View brasileño",
-                project_title_2: "Generador de Grafos 2D",
-                project_text_2: "Generador de grafos aleatorios 2D creado para facilitar la comprensión de la teoría de grafos, especialmente en la aplicación de redes neuronales a grafos.",
-                contact_title: "Contacto",
-                contact_text: "Para más información sobre mi trayectoria profesional, visita mi <a href='https://www.linkedin.com/in/juanocarvalho/'>Perfil de LinkedIn</a>.<br>Siéntete libre de contactarme por <a href='mailto:juanocarvalho@email.com'> email</a>."
+                    education_header: "Educación",
+                    education_title_1: "Universidad Federal del ABC",
+                    education_title_2: "Universidad de Bohemia del Sul",
+                    education_title_3: "Universidad Federal del ABC",
+                    education_text_1: "Máster en Ciencias de la Computación <small><b>(aspirante - actualmente estudiante no graduado)</b></small>",
+                    education_text_2: "UNIGOU Exchange - Winter 2025 <small><b>(completado)</b></small>",
+                    education_text_3: "Licenciatura en Ciencias de la Computación <small><b>(en curso)</b></small>",
+                    education_text_4: "Licenciatura en Ciencia y Tecnologia <small><b>(completado)</b></small>",
+                    project_header: "Proyectos",
+                    project_title_1: "Análisis de Aceras",
+                    project_text_1: "Estimación automática del ancho de aceras y detección de obstáculos utilizando Segmentación Panóptica y Estimación de Profundidad en imágenes de Street View brasileño",
+                    project_title_2: "Generador de Grafos 2D",
+                    project_text_2: "Generador de grafos aleatorios 2D creado para facilitar la comprensión de la teoría de grafos, especialmente en la aplicación de redes neuronales a grafos.",
+                    contact_title: "Información Adicional + Contacto",
+                    contact_text: "Para más información sobre mi trayectoria profesional, visita mi <a href='https://www.linkedin.com/in/juanocarvalho/'>Perfil de LinkedIn</a>.<br>Siéntete libre de contactarme por <a href='mailto:juanocarvalho@email.com'> email</a>."
+                }
+            };
+
+            function setLanguage(lang) {
+                document.getElementById('about_text').innerHTML = translations[lang].about_text;
+                document.getElementById('education_header').innerText = translations[lang].education_header;
+                document.getElementById('education_title_1').innerText = translations[lang].education_title_1;
+                document.getElementById('education_title_2').innerText = translations[lang].education_title_2;
+                document.getElementById('education_title_3').innerText = translations[lang].education_title_3;
+                document.getElementById('education_text_1').innerHTML = translations[lang].education_text_1;
+                document.getElementById('education_text_2').innerHTML = translations[lang].education_text_2;
+                document.getElementById('education_text_3').innerHTML = translations[lang].education_text_3;
+                document.getElementById('education_text_4').innerHTML = translations[lang].education_text_4;
+                document.getElementById('project_header').innerText = translations[lang].project_header;
+                document.getElementById('project_title_1').innerText = translations[lang].project_title_1;
+                document.getElementById('project_text_1').innerHTML = translations[lang].project_text_1;
+                document.getElementById('project_title_2').innerText = translations[lang].project_title_2;
+                document.getElementById('project_text_2').innerHTML = translations[lang].project_text_2;
+                document.getElementById('contact_title').innerText = translations[lang].contact_title;
+                document.getElementById('contact_text').innerHTML = translations[lang].contact_text;
             }
-        };
 
-        function setLanguage(lang) {
-            document.getElementById('about_text').innerHTML = translations[lang].about_text;
-            document.getElementById('education_header').innerText = translations[lang].education_header;
-            document.getElementById('education_title_1').innerText = translations[lang].education_title_1;
-            document.getElementById('education_title_2').innerText = translations[lang].education_title_2;
-            document.getElementById('education_title_3').innerText = translations[lang].education_title_3;
-            document.getElementById('education_text_1').innerHTML = translations[lang].education_text_1;
-            document.getElementById('education_text_2').innerHTML = translations[lang].education_text_2;
-            document.getElementById('education_text_3').innerHTML = translations[lang].education_text_3;
-            document.getElementById('education_text_4').innerHTML = translations[lang].education_text_4;
-            document.getElementById('project_header').innerText = translations[lang].project_header;
-            document.getElementById('project_title_1').innerText = translations[lang].project_title_1;
-            document.getElementById('project_text_1').innerHTML = translations[lang].project_text_1;
-            document.getElementById('project_title_2').innerText = translations[lang].project_title_2;
-            document.getElementById('project_text_2').innerHTML = translations[lang].project_text_2;
-            document.getElementById('contact_title').innerText = translations[lang].contact_title;
-            document.getElementById('contact_text').innerHTML = translations[lang].contact_text;
-        }
+            function toggleTheme() {
+                const body = document.body;
+                const themeButton = document.querySelector('.theme-toggle');
 
-        function toggleTheme() {
-            const body = document.body;
+                // Alterna a classe light no body
+                body.classList.toggle('light');
+
+                // Atualiza o emoji do botão baseado no tema atual
+                if (body.classList.contains('light')) {
+                    themeButton.textContent = '🌙';  // Lua no modo light (pra mudar para dark)
+                } else {
+                    themeButton.textContent = '☀️';  // Sol no modo dark (pra mudar para light)
+                }
+            }
+
+            // Default to English
+            setLanguage('en');
+
+            // Define o emoji inicial do botão tema
             const themeButton = document.querySelector('.theme-toggle');
-
-            // Alterna a classe light no body
-            body.classList.toggle('light');
-
-            // Atualiza o emoji do botão baseado no tema atual
-            if (body.classList.contains('light')) {
-                themeButton.textContent = '🌙';  // Lua no modo light (pra mudar para dark)
+            if (document.body.classList.contains('light')) {
+                themeButton.textContent = '🌙';
             } else {
-                themeButton.textContent = '☀️';  // Sol no modo dark (pra mudar para light)
+                themeButton.textContent = '☀️';
             }
-        }
 
-        // Default to English
-        setLanguage('en');
-
-        // Define o emoji inicial do botão tema
-        const themeButton = document.querySelector('.theme-toggle');
-        if (document.body.classList.contains('light')) {
-            themeButton.textContent = '🌙';
-        } else {
-            themeButton.textContent = '☀️';
-        }
-
-    </script>
+        </script>
 </body>
 
 </html>
