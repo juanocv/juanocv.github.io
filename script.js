@@ -30,15 +30,13 @@ const translations = {
         knowledgeList: [
             "Programação Orientada a Objetos",
             "Programação Funcional",
-            "Engenharia de Software",
-            "Aprendizado de Máquina",
-            "Algoritmos e estruturas de dados",
-            "Desenvolvimento low e no code"
+            "Algoritmos e Estruturas de dados",
+            "Visão Computacional",
         ],
 
         interestsList: [
             "Paradigma de programação funcional " + check,
-            "Modelos preditivos aplicados à mobilidade urbana " + check,
+            "Visão computacional aplicada à infraestrutura urbana " + check,
             "Ensino de lógica na educação " + check
         ]
     },
@@ -60,15 +58,13 @@ const translations = {
         knowledgeList: [
             "Object-Oriented Programming",
             "Functional Programming",
-            "Software Engineering",
-            "Machine Learning",
             "Algorithms and Data Structures",
-            "Low/No Code Development"
+            "Computer Vision",
         ],
 
         interestsList: [
             "Functional Programming " + check,
-            "ML models applied to urban mobility " + check,
+            "Computer vision applied to urban infrastructure " + check,
             "Logic teaching in education " + check
         ]
     },
@@ -90,15 +86,13 @@ const translations = {
         knowledgeList: [
             "Programación Orientada a Objetos",
             "Programación Funcional",
-            "Ingeniería de Software",
-            "Aprendizaje Automático",
             "Algoritmos y Estructuras de Datos",
-            "Desarrollo de Código Bajo/No Code"
+            "Visión por computador",
         ],
 
         interestsList: [
             "Paradigma de Programación Funcional " + check,
-            "Modelos predictivos aplicados a la mobilidad urbana " + check,
+            "Visión por computador aplicada a la infraestructura urbana" + check,
             "Ensino de lógica en la educación " + check
         ]
     }
