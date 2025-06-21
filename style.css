@@ -1,123 +1,250 @@
-@font-face {
-    font-family: undertale;
-    src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
+/* style.css */
+
+:root {
+  --primary-color: #0a192f;
+  --accent-color: #64ffda;
+  --text-color: #ccd6f6;
+  --background-color: #0a192f;
+  --header-bg: #020c1b;
+  --footer-text: #8892b0;
 }
 
-/* Estilos globais */
+body.light {
+  --primary-color: #ffffff;
+  --accent-color: #0a192f;
+  --text-color: #0a192f;
+  --background-color: #ffffff;
+  --header-bg: #f0f0f0;
+  --footer-text: #555;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: undertale;
-    background-image: url('imgs/background.jpg');
-    background-color: #121212;
-    /* Dark mode */
-    color: #f0f0f0;
-    /* Cor de texto clara */
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-li {
-    display: inline;
-    margin: 0px 10px 0px 0px;
-    margin-bottom: 20px;
+header {
+  background-color: var(--header-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
 }
 
-/* Container principal */
+header strong {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+nav button, .theme-toggle {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  font-weight: 500;
+  margin: 0; /* remove margens para controle com gap */
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0; /* remover margin-left */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  opacity: 0.7; /* Simples efeito hover */
+  background: transparent; /* sem background no hover */
+}
+
+nav button.language-flag {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border: none;
+  background: transparent;
+  margin: 0; /* remover margin-left */
+  cursor: pointer;
+}
+
+nav button:hover, .theme-toggle:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
 .container {
-    background-color: #1e1e1e;
-    /* Cor mais clara para o "papel" */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+#site_title a {
+  color: inherit;        /* Cor herdada, respeita claro/escuro */
+  text-decoration: none;
+  margin-right: 10px;    /* Espaçamento entre ícones */
+  font-size: 1.5rem;     /* Tamanho dos ícones */
+}
+
+#education i {
+  padding-left: 0px;
+}
+
+#projects i {
+  padding-left: 0px;
+}
+
+h1, h2 {
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.about-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-photo {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.about-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    flex-grow: 1;
-}
-
-.language {
-    float: right;
-}
-
-/* Estilo da divisão de cabeçalho */
-.header h1 {
-    font-size: 2.5em;
+    background-color: var(--background);
+    color: var(--text);
     text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header h3 {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-/* Estilo das seções */
-.section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 5px;
-}
-
-.section ul {
-    
-    padding-left: 0;
-}
-
-.section ul li {
-    list-style-position: inside;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.section.certificates ul li {
-    display: list-item;
-    margin-bottom: -2%;
-}
-
-.section.interests #list {
-    display: flex;
-    align-items: center;
-}
-
-/* Estilo para os links */
-.section.links ul li a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.section.links ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer p {
-    text-align: center;
-    margin: 0;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .header h1 {
-        font-size: 2em;
-    }
+  header strong {
+    font-size: 1.2rem;
+  }
 
-    .section h2 {
-        font-size: 1.5em;
-    }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
 
-    .section ul li {
-        font-size: 1em;
-    }
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo {
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  nav button, .theme-toggle {
+    margin: 0.2rem 0.2rem 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .about-photo img {
+    width: 150px;
+    height: 150px;
+  }
 }
+
+@media (max-width: 480px) {
+  header strong {
+    font-size: 1.2rem;
+  }
+
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  nav button, .theme-toggle {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+}
+
+footer {
+  background-color: var(--header-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 5px 0; /* <-- diminua esse valor */
+  font-size: 0.85rem; /* <-- pode ajustar o tamanho da fonte também */
+}
+
