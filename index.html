@@ -13,24 +13,26 @@
 
 <body class="light">
     <header>
-        <div id="site_title">
-            <a href="https://github.com/juanocv" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/juanocarvalho" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:juanocarvalho@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <span id="site_title_text"></span>
+        <div class="header-row">
+            <div id="site_title">
+                <a href="https://github.com/juanocv" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juanocarvalho" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:juanocarvalho@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <span id="site_title_text"></span>
+            </div>
+            <nav>
+                <button class="language-flag" onclick="setLanguage('en')"><i class="fi fi-us"></i></button>
+                <button class="language-flag" onclick="setLanguage('pt')"><i class="fi fi-br"></i></button>
+                <button class="language-flag" onclick="setLanguage('es')"><i class="fi fi-es"></i></button>
+                <button class="theme-toggle" onclick="toggleTheme()">☀ / 🌙</button>
+            </nav>
         </div>
-        <nav>
-            <button class="language-flag" onclick="setLanguage('en')"><i class="fi fi-us"></i></button>
-            <button class="language-flag" onclick="setLanguage('pt')"><i class="fi fi-br"></i></button>
-            <button class="language-flag" onclick="setLanguage('es')"><i class="fi fi-es"></i></button>
-            <button class="theme-toggle" onclick="toggleTheme()">☀ / 🌙</button>
-        </nav>
     </header>
 
     <div class="container">
