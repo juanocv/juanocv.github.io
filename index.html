@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Carvalho — Computer Vision &amp; Machine Learning</title>
+  <title>Juan Carvalho — Portfólio Pessoal</title>
 
-  <meta name="description" content="Juan Oliveira de Carvalho — mestrando em Ciência da Computação na UFABC. Pesquisa em Visão Computacional e Machine Learning aplicados a Cidades Inteligentes e Agricultura.">
+  <meta name="description" content="Juan Oliveira de Carvalho — Mestrando em Ciência da Computação na UFABC. Pesquisa em Visão Computacional e Machine Learning aplicados a Cidades Inteligentes e Agricultura.">
   <meta name="author" content="Juan Oliveira de Carvalho">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#070c17">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fdfdfc">
 
   <link rel="canonical" href="https://juanocv.github.io/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Juan Carvalho — Computer Vision &amp; Machine Learning">
+  <meta property="og:title" content="Juan Carvalho — Portfólio Pessoal">
   <meta property="og:description" content="Mestrando em Ciência da Computação na UFABC. Visão Computacional e Machine Learning aplicados a Cidades Inteligentes e Agricultura.">
   <meta property="og:url" content="https://juanocv.github.io/">
   <meta property="og:image" content="https://juanocv.github.io/imgs/juan.jpg">
   <meta name="twitter:card" content="summary">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <script>
@@ -31,189 +27,112 @@
     (function () {
       var saved;
       try { saved = localStorage.getItem('juanocv:theme'); } catch (e) { /* ignora */ }
-      var dark = saved ? saved === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches;
+      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
       document.documentElement.dataset.theme = dark ? 'dark' : 'light';
     })();
   </script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip_link">Pular para o conteúdo</a>
+  <div class="page">
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#main">
-        <span class="brand-mark" aria-hidden="true">J</span>
-        <span class="brand-name">Juan Carvalho</span>
-      </a>
-
-      <nav class="section-nav" aria-label="Seções">
-        <a href="#about" data-i18n="nav_about">Sobre</a>
-        <a href="#education" data-i18n="nav_education">Formação</a>
-        <a href="#projects" data-i18n="nav_projects">Projetos</a>
-        <a href="#contact" data-i18n="nav_contact">Contato</a>
-      </nav>
-
-      <div class="header-controls">
-        <div class="lang-switch" role="group" aria-label="Idioma / Language">
-          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-          <button type="button" data-lang="es" aria-pressed="false">ES</button>
-        </div>
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
-          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M4.22 4.22l1.84 1.84M17.94 17.94l1.84 1.84M2 12h2.6M19.4 12H22M4.22 19.78l1.84-1.84M17.94 6.06l1.84-1.84"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
-        </button>
-      </div>
+    <div class="controls">
+      <span class="langs">
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </span>
+      <button type="button" id="theme-toggle" aria-label="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.5 4.5l1.7 1.7M17.8 17.8l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.5 19.5l1.7-1.7M17.8 6.2l1.7-1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
     </div>
-  </header>
 
-  <main id="main">
-    <!-- Hero / Sobre -->
-    <section id="about" class="hero reveal">
-      <div class="hero-text">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Visão Computacional &amp; Machine Learning</p>
+    <header class="masthead">
+      <img class="portrait" src="imgs/juan.jpg" width="512" height="512" alt="Juan Oliveira de Carvalho">
+      <div>
         <h1>Juan Oliveira de Carvalho</h1>
-        <p class="hero-role" data-i18n="hero_role">Mestrando em Ciência da Computação · UFABC</p>
-        <div class="hero-bio" data-i18n-html="about_text"></div>
-
-        <ul class="tag-list" aria-label="Áreas de interesse">
-          <li data-i18n="tag_cv">Visão Computacional</li>
-          <li data-i18n="tag_ml">Machine Learning</li>
-          <li data-i18n="tag_smart">Cidades Inteligentes</li>
-          <li data-i18n="tag_agri">Agricultura</li>
-        </ul>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/juanocarvalho" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14v7h-4v-6.2c0-1.48-.03-3.4-2.07-3.4-2.08 0-2.4 1.62-2.4 3.29V21h-3.9V9Z"/></svg>
-            LinkedIn
-          </a>
-          <a class="btn" href="https://github.com/juanocv" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.29-5.25-5.74 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.77.12 3.06.74.81 1.19 1.84 1.19 3.11 0 4.46-2.7 5.44-5.27 5.73.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-            GitHub
-          </a>
-          <a class="btn" href="mailto:juanocarvalho@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v.3l-10 5.9-10-5.9v-.3Zm0 2.6V18.5A1.5 1.5 0 0 0 3.5 20h17a1.5 1.5 0 0 0 1.5-1.5V8.1l-9.49 5.6a1 1 0 0 1-1.02 0L2 8.1Z"/></svg>
-            E-mail
-          </a>
-        </div>
+        <p class="role" data-i18n="hero_role"></p>
       </div>
+    </header>
 
-      <figure class="hero-photo">
-        <img src="imgs/juan.jpg" width="512" height="512" alt="Juan Oliveira de Carvalho" fetchpriority="high">
-      </figure>
+    <div class="bio" data-i18n-html="about_text"></div>
+    <p class="bio-interests" data-i18n="interests_text"></p>
+
+    <section>
+      <h2 data-i18n="education_header">Formação</h2>
+
+      <article class="entry">
+        <h3 data-i18n="edu_1_degree"></h3>
+        <p class="meta">
+          <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc"></a>
+          <span class="sep">·</span> 2026 – 2028
+          <span class="sep">·</span> <span data-i18n="status_ongoing"></span>
+        </p>
+        <p data-i18n="edu_1_desc"></p>
+      </article>
+
+      <article class="entry">
+        <h3 data-i18n="edu_2_degree"></h3>
+        <p class="meta">
+          <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer" data-i18n="usb"></a>
+          <span class="sep">·</span> 2025
+        </p>
+        <p data-i18n="edu_2_desc"></p>
+      </article>
+
+      <article class="entry">
+        <h3 data-i18n="edu_3_degree"></h3>
+        <p class="meta">
+          <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc"></a>
+          <span class="sep">·</span> 2018 – 2026
+        </p>
+        <p data-i18n="edu_3_desc"></p>
+      </article>
+
+      <article class="entry">
+        <h3 data-i18n="edu_4_degree"></h3>
+        <p class="meta">
+          <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc"></a>
+          <span class="sep">·</span> 2018 – 2023
+        </p>
+        <p data-i18n="edu_4_desc"></p>
+      </article>
     </section>
 
-    <!-- Formação -->
-    <section id="education" class="reveal">
-      <h2 class="section-title"><span class="section-index">01</span><span data-i18n="education_header">Formação</span></h2>
+    <section>
+      <h2 data-i18n="project_header">Projetos</h2>
 
-      <ol class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-head">
-            <h3 data-i18n="edu_1_degree">Mestrado em Ciência da Computação</h3>
-            <span class="status status-active" data-i18n="status_ongoing">em andamento</span>
-          </div>
-          <p class="timeline-org">
-            <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc">Universidade Federal do ABC</a>
-            <span class="timeline-period">09.2026 — 06.2028</span>
-          </p>
-          <p class="timeline-desc" data-i18n-html="edu_1_desc"></p>
-        </li>
+      <article class="entry">
+        <h3><a href="https://github.com/juanocv/sidewalk_analysis" target="_blank" rel="noopener noreferrer" data-i18n="project_title_1"></a></h3>
+        <p class="meta">github.com/juanocv/sidewalk_analysis</p>
+        <p data-i18n="project_text_1"></p>
+      </article>
 
-        <li class="timeline-item">
-          <div class="timeline-head">
-            <h3 data-i18n="edu_2_degree">Intercâmbio Acadêmico UNIGOU — Winter 2025</h3>
-            <span class="status" data-i18n="status_done">concluído</span>
-          </div>
-          <p class="timeline-org">
-            <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer" data-i18n="usb">Universidade da Boêmia do Sul</a>
-            <span class="timeline-period">01.2025 — 03.2025</span>
-          </p>
-          <p class="timeline-desc" data-i18n-html="edu_2_desc"></p>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-head">
-            <h3 data-i18n="edu_3_degree">Bacharelado em Ciência da Computação</h3>
-            <span class="status" data-i18n="status_done">concluído</span>
-          </div>
-          <p class="timeline-org">
-            <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc">Universidade Federal do ABC</a>
-            <span class="timeline-period">05.2023 — 05.2026</span>
-          </p>
-          <p class="timeline-desc" data-i18n-html="edu_3_desc"></p>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-head">
-            <h3 data-i18n="edu_4_degree">Bacharelado em Ciência e Tecnologia</h3>
-            <span class="status" data-i18n="status_done">concluído</span>
-          </div>
-          <p class="timeline-org">
-            <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer" data-i18n="ufabc">Universidade Federal do ABC</a>
-            <span class="timeline-period">07.2018 — 05.2023</span>
-          </p>
-          <p class="timeline-desc" data-i18n-html="edu_4_desc"></p>
-        </li>
-      </ol>
+      <article class="entry">
+        <h3><a href="https://github.com/juanocv/2DG" target="_blank" rel="noopener noreferrer" data-i18n="project_title_2"></a></h3>
+        <p class="meta">github.com/juanocv/2DG</p>
+        <p data-i18n="project_text_2"></p>
+      </article>
     </section>
 
-    <!-- Projetos -->
-    <section id="projects" class="reveal">
-      <h2 class="section-title"><span class="section-index">02</span><span data-i18n="project_header">Projetos</span></h2>
-
-      <div class="project-grid">
-        <article class="card">
-          <h3 class="card-title" data-i18n="project_title_1">Análise de Calçadas</h3>
-          <p class="card-desc" data-i18n="project_text_1"></p>
-          <ul class="tag-list tag-list-sm" aria-hidden="true">
-            <li>Panoptic Segmentation</li>
-            <li>Depth Estimation</li>
-            <li>Street View</li>
-            <li>Python</li>
-          </ul>
-          <a class="card-link" href="https://github.com/juanocv/sidewalk_analysis" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.29-5.25-5.74 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.77.12 3.06.74.81 1.19 1.84 1.19 3.11 0 4.46-2.7 5.44-5.27 5.73.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-            <span data-i18n="view_on_github">Ver no GitHub</span>
-          </a>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title" data-i18n="project_title_2">Gerador de Grafos 2D</h3>
-          <p class="card-desc" data-i18n="project_text_2"></p>
-          <ul class="tag-list tag-list-sm" aria-hidden="true">
-            <li>Graph Theory</li>
-            <li>GNN</li>
-            <li>Python</li>
-          </ul>
-          <a class="card-link" href="https://github.com/juanocv/2DG" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.29-5.25-5.74 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.77.12 3.06.74.81 1.19 1.84 1.19 3.11 0 4.46-2.7 5.44-5.27 5.73.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-            <span data-i18n="view_on_github">Ver no GitHub</span>
-          </a>
-        </article>
-      </div>
+    <section>
+      <h2 data-i18n="contact_title">Contato</h2>
+      <p data-i18n="contact_text"></p>
+      <p class="links">
+        <a href="mailto:juanocarvalho@gmail.com">juanocarvalho@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/juanocarvalho" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/juanocv" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
     </section>
 
-    <!-- Contato -->
-    <section id="contact" class="reveal">
-      <h2 class="section-title"><span class="section-index">03</span><span data-i18n="contact_title">Contato</span></h2>
+    <footer>
+      &copy; <span id="year">2026</span> Juan Oliveira de Carvalho
+    </footer>
 
-      <div class="contact-card">
-        <p data-i18n-html="contact_text"></p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:juanocarvalho@gmail.com">juanocarvalho@gmail.com</a>
-          <a class="btn" href="https://www.linkedin.com/in/juanocarvalho" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn" href="https://github.com/juanocv" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Juan Oliveira de Carvalho.</p>
-  </footer>
+  </div>
 
   <script src="i18n.js"></script>
   <script src="main.js"></script>
