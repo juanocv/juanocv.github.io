@@ -11,19 +11,17 @@ const TRANSLATIONS = {
     _meta: {
       htmlLang: 'pt-BR',
       title: 'Juan Carvalho — Portfólio Pessoal',
-      description: 'Juan Oliveira de Carvalho — Mestrando em Ciência da Computação na UFABC. Pesquisa em Visão Computacional e Machine Learning aplicados a Cidades Inteligentes e Agricultura.',
+      description: 'Juan Oliveira de Carvalho — Mestrando em Ciência da Computação na UFABC.',
       themeLabel: 'Alternar tema claro/escuro'
     },
 
-    hero_role: 'Mestrando em Ciência da Computação · UFABC',
-    interests_text: 'Meus interesses de pesquisa são visão computacional e machine learning aplicados a cidades inteligentes e agricultura.',
-    about_text: `<p>Olá! Sou Juan Carvalho. Concluí o <b>Bacharelado em Ciência da Computação</b> pela
-      <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Universidade Federal do ABC</a>
-      em maio de 2026 e atualmente curso o <b>Mestrado em Ciência da Computação</b> na mesma instituição, sob orientação do
-      <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael Yokoingawa de Camargo</a>,
-      coordenador do Centro Estratégico de Pesquisa em Ciência de Dados (DATAS).</p>
-      <p>Em 2025 participei de um intercâmbio acadêmico na
-      <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer">Universidade da Boêmia do Sul</a>, na Chéquia,
+    hero_role: 'Mestrando em Ciência da Computação | Cientista de Dados',
+    interests_text: 'Meus interesses de pesquisa são visão computacional e machine learning aplicados a cidades inteligentes, computação de alta performance e agricultura.',
+    about_text: `<p>Olá! Sou formado nos Bacharelados em <b>Ciência e Tecnologia e em Ciência da Computação</b> pela
+      <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Universidade Federal do ABC</a> e atualmente curso o <b>Mestrado em Ciência da Computação</b> 
+      na mesma instituição, sob orientação do <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael 
+      Yokoingawa de Camargo</a>, coordenador do Centro Estratégico de Pesquisa em Ciência de Dados (DATAS).</p>
+      <p>Em 2025 participei de um intercâmbio acadêmico na <a href="https://www.jcu.cz/en/" target="_blank" rel="noopener noreferrer">Universidade da Boêmia do Sul</a>, na Chéquia,
       onde pesquisei inteligência artificial aplicada a tecnologias agrícolas por meio de modelos de visão computacional.</p>`,
 
     education_header: 'Formação',
@@ -53,15 +51,15 @@ const TRANSLATIONS = {
     _meta: {
       htmlLang: 'en',
       title: 'Juan Carvalho — Personal Portfolio',
-      description: 'Juan Oliveira de Carvalho — MSc student in Computer Science at UFABC. Research on Computer Vision and Machine Learning applied to Smart Cities and Agriculture.',
+      description: 'Juan Oliveira de Carvalho — MSc student in Computer Science at UFABC.',
       themeLabel: 'Toggle light/dark theme'
     },
 
-    hero_role: 'MSc student in Computer Science · UFABC',
-    interests_text: 'My research interests are computer vision and machine learning applied to smart cities and agriculture.',
-    about_text: `<p>Hi there! I'm Juan Carvalho. I completed my <b>BSc in Computer Science</b> at the
+    hero_role: 'M.Sc. Candidate in Computer Science | Data Scientist',
+    interests_text: 'My research interests are computer vision and machine learning applied to smart cities, high-performance computing and agriculture.',
+    about_text: `<p>Hi there! I hold a <b>BSc in Science and Technology and in Computer Science</b> from the
       <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Federal University of ABC</a>
-      in May 2026, and I'm currently an <b>MSc student in Computer Science</b> at the same university, under the supervision of
+      and am currently an <b>MSc student in Computer Science</b> at the same university, under the supervision of
       <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael Yokoingawa de Camargo</a>,
       coordinator of the Strategic Research Center for Data Science (DATAS).</p>
       <p>In 2025 I joined an academic exchange program at the
@@ -72,7 +70,7 @@ const TRANSLATIONS = {
     status_ongoing: 'in progress',
     ufabc: 'Federal University of ABC',
     usb: 'University of South Bohemia',
-    edu_1_degree: 'MSc in Computer Science',
+    edu_1_degree: 'M.Sc. in Computer Science',
     edu_1_desc: 'Research on reinforcement learning applied to scheduling problems in HPC.',
     edu_2_degree: 'UNIGOU Exchange Program — Winter 2025',
     edu_2_desc: 'Research on artificial intelligence applied to agricultural technologies through computer vision models.',
@@ -95,15 +93,15 @@ const TRANSLATIONS = {
     _meta: {
       htmlLang: 'es',
       title: 'Juan Carvalho — Portafolio Personal',
-      description: 'Juan Oliveira de Carvalho — estudiante de maestría en Ciencias de la Computación en la UFABC. Investigación en Visión por Computadora y Machine Learning aplicados a Ciudades Inteligentes y Agricultura.',
+      description: 'Juan Oliveira de Carvalho — estudiante de maestría en Ciencias de la Computación en la UFABC.',
       themeLabel: 'Cambiar tema claro/oscuro'
     },
 
-    hero_role: 'Estudiante de maestría en Ciencias de la Computación · UFABC',
-    interests_text: 'Mis intereses de investigación son la visión por computadora y el machine learning aplicados a ciudades inteligentes y agricultura.',
-    about_text: `<p>¡Hola! Soy Juan Carvalho. Concluí la <b>Licenciatura en Ciencias de la Computación</b> en la
+    hero_role: 'Maestrando en Ciencias de la Computación en UFABC | Científico de Datos',
+    interests_text: 'Mis intereses de investigación son la visión por computadora y el machine learning aplicados a ciudades inteligentes, computación de alto rendimiento y agricultura.',
+    about_text: `<p>¡Hola! Soy <b>graduado en Ciencia y Tecnología y en Ciencias de la Computación</b> por la
       <a href="https://www.ufabc.edu.br" target="_blank" rel="noopener noreferrer">Universidad Federal del ABC</a>
-      en mayo de 2026 y actualmente curso la <b>Maestría en Ciencias de la Computación</b> en la misma universidad, bajo la supervisión del
+      y actualmente curso la <b>Maestría en Ciencias de la Computación</b> en la misma universidad, bajo la supervisión del
       <a href="https://www.ufabc.edu.br/ensino/docentes/raphael-yokoingawa-de-camargo" target="_blank" rel="noopener noreferrer">Prof. Raphael Yokoingawa de Camargo</a>,
       coordinador del Centro Estratégico de Investigación en Ciencia de Datos (DATAS).</p>
       <p>En 2025 participé en un programa de intercambio académico en la
